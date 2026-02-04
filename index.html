@@ -73,29 +73,16 @@
       supported-color-schemes: light dark;
     }
 
+    /* Put this BELOW your current dark-mode block (or inside it as override) */
     @media (prefers-color-scheme: dark) {
-
-      body,
-      table,
-      td {
-        background-color: #151515 !important;
-        background: radial-gradient(circle, rgba(21, 21, 21, 1) 0%, rgba(21, 21, 21, 1) 100%);
-        color: #6B6B6B !important;
+      .cta-wrap {
+        background-color: #560000 !important;
+        background: #560000 !important;
       }
 
-      h1,
-      h2,
-      h3,
-      p {
-        /*  background-image: linear-gradient(90deg, #DCDCDC 0%, #DCDCDC 69%) !important;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent !important; */
-        color: #6B6B6B !important;
-      }
-
-      a {
-        color: #FACB2D !important;
+      .cta-wrap td {
+        background-color: transparent !important;
+        background: transparent !important;
       }
     }
   </style>
@@ -187,52 +174,54 @@
           </td>
         </tr>
 
+        <!-- ===== CTA SECTION (won't be overridden by your global dark-mode) ===== -->
         <tr>
-          <td style=" padding:0px 0px 0px 0px">
-            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"
-              style="background: linear-gradient(90deg,rgba(86, 0, 0, 1) 0%, rgba(86, 0, 0, 1) 50%);max-width: 600px; width: 100%; padding:10px 10px 20px 10px; background-color: #560000;">
-              <!-- style="background-color: #560000; max-width: 600px; width: 100%; padding:0px 0px 0px 0px;"> -->
-              <tr>
-                <td align="center" valign="middle" style="font-size:0px; padding:0; word-break:break-word;">
-                  <div style="max-width:600px;">
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation"
-                      style="border-collapse:separate; line-height:100%;">
-                      <tbody>
-                        <tr>
-                          <td align="center" valign="middle" role="presentation" bgcolor="#FFCF24" style="
-                          background:#FFCF24;
-                          border:solid 0px transparent;
-                          border-radius:12px;
-                        ">
-                            <a href="https://play.mascot.games/the-epic-win-x125/" target="_blank" rel="noopener"
-                              title="Mascot Gaming The Epic Win x125 Play Demo!" style="
-                            display:inline-block;
-                            background:#FFCF24;
-                            color:#000000;
-                            font-family:Helvetica, Arial, sans-serif;
-                            font-size:16px;
-                            font-weight:normal;
-                            line-height:120%;
-                            margin:0;
-                            padding:12px 40px;
-                            text-decoration:none;
-                            text-transform:none;
-                            border-radius:60px;
-                          ">
-                              <b style="font-weight:inherit;">LET'S TALK</b>
-                            </a>
+          <td align="center" style="padding:0;">
 
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+            <!-- Outer wrapper (keeps width stable) -->
+            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="600"
+              style="width:100%;max-width:600px;border-collapse:collapse;">
+              <tr>
+
+                <!-- Background + paddings MUST be on TD (more stable than table background) -->
+                <td class="cta-wrap" align="center" style="background-color:#560000;padding:10px 10px 20px 10px;">
+
+                  <!-- Button table -->
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                    style="border-collapse:separate;line-height:100%;">
+                    <tr>
+                      <td align="center" bgcolor="#FFCF24" style="background:#FFCF24;border-radius:12px;">
+
+                        <a href="https://play.mascot.games/the-epic-win-x125/" target="_blank"
+                          title="Mascot Gaming The Epic Win x125 Play Demo!" style="
+                    display:inline-block;
+                    background:#FFCF24;
+                    color:#000000;
+                    font-family:Helvetica,Arial,sans-serif;
+                    font-size:16px;
+                    font-weight:normal;
+                    line-height:120%;
+                    margin:0;
+                    padding:12px 40px;
+                    text-decoration:none;
+                    text-transform:none;
+                    border-radius:12px;
+                  ">
+                          <b style="font-weight:inherit;color:#000000;">Try Demo</b>
+                        </a>
+
+                      </td>
+                    </tr>
+                  </table>
+
                 </td>
               </tr>
-
             </table>
+
           </td>
         </tr>
+        <!-- ===== /CTA SECTION ===== -->
+
 
 
         <tr>
@@ -254,29 +243,29 @@
           </td>
         </tr>
 
+        <!-- ===== CTA SECTION (won't be overridden by your global dark-mode) ===== -->
         <tr>
-          <td style=" padding:0px 0px 0px 0px">
-            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation"
-              style="background: linear-gradient(90deg,rgba(86, 0, 0, 1) 0%, rgba(86, 0, 0, 1) 50%);max-width: 600px; width: 100%; padding:10px 10px 20px 10px; background-color: #560000;">
-              <!-- style="background-color: #560000; max-width: 600px; width: 100%; padding:0px 0px 0px 0px;"> -->
+          <td align="center" style="padding:0;">
+
+            <!-- Outer wrapper (keeps width stable) -->
+            <table align="center" border="0" cellspacing="0" cellpadding="0" role="presentation" width="600"
+              style="width:100%;max-width:600px;border-collapse:collapse;">
               <tr>
-                <td align="center" valign="middle" style="font-size:0px; padding:0; word-break:break-word;">
-                  <div style="max-width:600px;">
-                    <table border="0" cellpadding="0" cellspacing="0" role="presentation"
-                      style="border-collapse:separate; line-height:100%;">
-                      <tbody>
-                        <tr>
-                          <td align="center" valign="middle" role="presentation" bgcolor="#FFCF24" style="
-                          background:#FFCF24;
-                          border:solid 0px transparent;
-                          border-radius:12px;
-                        ">
-                            <a href="mailto:mailto:contact@mascot.games?subject=Let's%20Talk" target="_blank"
-                              rel="noopener" style="
+
+                <!-- Background + paddings MUST be on TD (more stable than table background) -->
+                <td class="cta-wrap" align="center" style="background-color:#560000;padding:10px 10px 20px 10px;">
+
+                  <!-- Button table -->
+                  <table border="0" cellspacing="0" cellpadding="0" role="presentation"
+                    style="border-collapse:separate;line-height:100%;">
+                    <tr>
+                      <td align="center" bgcolor="#FFCF24" style="background:#FFCF24;border-radius:12px;">
+
+                        <a href="mailto:contact@mascot.games?subject=Let%27s%20Talk" style="
                             display:inline-block;
                             background:#FFCF24;
                             color:#000000;
-                            font-family:Helvetica, Arial, sans-serif;
+                            font-family:Helvetica,Arial,sans-serif;
                             font-size:16px;
                             font-weight:normal;
                             line-height:120%;
@@ -284,22 +273,22 @@
                             padding:12px 40px;
                             text-decoration:none;
                             text-transform:none;
-                            border-radius:60px;
+                            border-radius:12px;
                           ">
-                              <b style="font-weight:inherit;">LET'S TALK</b>
-                            </a>
+                          <b style="font-weight:inherit;color:#000000;">Let's Talk</b>
+                        </a>
 
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
+                      </td>
+                    </tr>
+                  </table>
+
                 </td>
               </tr>
-
             </table>
+
           </td>
         </tr>
+        <!-- ===== /CTA SECTION ===== -->
 
 
 
